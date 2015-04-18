@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ScrollWeb</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- .scroll-link = main nav links -->
+  <!-- .scroll-top = logo -->
+  <!-- .page-section w unique id for styling = divs w content -->
+  <!-- data-id attributes to scroll links -->
+  <div class= "header">
+    <div class= "container">
+      <nav class= "navbar" role="navigation">
+        <div class= "navbar-header">
+          <button type= "button" id= "nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+            <span class= "sr-only">Toggle navigation</span>
+            <span class= "icon-bar"></span>
+            <span class= "icon-bar"></span>
+            <span class= "icon-bar"></span>
+          </button>
+          <a href="#" class= "navbar-brand scroll-top">Scrolling Website</a>
+        </div>
+        <!--/.navbar-header-->
+        <div id= "main-nav" class= "collapse navbar-collapse">
+          <ul class= "nav navbar-nav">
+            <li><a href="" class= "scroll-link" data-id="boat">Boat</a></li>
+            <li><a href="" class= "scroll-link" data-id="dock">Dock</a></li>
+            <li><a href="" class= "scroll-link" data-id="fence">Fence</a></li>
+            <li><a href="" class= "scroll-link" data-id="golf">Golf</a></li>
+            <li><a href="" class= "scroll-link" data-id="lighthouse">Lighthouse</a></li>
+            <li><a href="" class= "scroll-link" data-id="water">Water</a></li>
+            <li><a href="" class= "scroll-link" data-id="beach">Beach</a></li>
+          </ul>
+        </div>
+        <!-- /#main-nav.navbar-collapse -->
+      </nav>
+      <!-- /.navbar -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.header -->
+  <div id= "boat" class= "page-section">
+    <div class= "container">
+      <h2>Boat</h2>
+      <p class= "caption">...</p>
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.#boat -->
+
+  <div id= "dock" class= "page-section">
+    <div class= "container">
+      <h2>Dock</h2>
+      <p class= "caption">...</p>
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.#dock -->
+  <div id= "fence" class= "page-section">
+    <div class= "container">
+      <h2>Fence</h2>
+      <p class= "caption">...</p>
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.fence -->
+  <div id= "golf" class= "page-section">
+    <div class= "container">
+      <h2>Golf</h2>
+      <p class= "caption">...</p>
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.golf -->
+  <div id= "lighthouse" class= "page-section">
+    <div class= "container">
+      <h2>Lighthouse</h2>
+      <p class= "caption">...</p>
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.lighthouse -->
+  <div id= "water" class= "page-section">
+    <div class= "container">
+      <h2>Water</h2>
+      <p class= "caption">...</p>
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.#water --> 
+  <div id= "beach" class= "page-section">
+    <div class= "container">
+      <h2>Beach</h2>
+      <p class= "caption">...</p>
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.#beach -->
+  
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+<%= yield %>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+.header {
+  position: fixed;
+  width: 100%;
+  background: #222;
+  z-index: 10;
+}
+.header .navbar-brand {
+  font-weight: 900;
+}
+.header .navbar {
+  margin: 0;
+  border: none;
+}
+.page-section {
+  width: 100%;
+  min-height: 800px;
+  padding: 50px 0;
+  border-bottom: 10px solid #fff;
+}
+.page-section h1 {
+  font-size: 4em;
+  margin: 50px 0;
+}
+.page-section h1 span {
+  font-weight: 200;
+}
+.page-section h2 {
+  font-size: 3em;
+  font-weight: 900;
+  color: #fff;
+  margin: 0 0 30px;
+  text-shadow: 2px 2px 2px #000;
+}
+.page-section p {
+  font-size: 1.2em;
+  font-weight: 200;
+  margin: 0 25% 20px 0;
+}
+.page-section p.lead {
+  font-size: 1.8em;
+}
+.page-section p.caption {
+  color: #fff;
+  padding: 20px;
+  background: url(trans_black_25.png);
+  text-shadow: 1px 1px 1px #000;
+}
+.page-section#boat {
+  background: url(boat.JPG) center no-repeat;
+  background-size: 990px 804px;
+}
+.page-section#dock {
+  background: url(dock.JPG) bottom center no-repeat;
+  background-size: 990px 804px;
+}
+.page-section#fence {
+  background: url(fence.JPG) top center no-repeat;
+  background-size: 990px 804px;
+}
+.page-section#golf {
+  background: url(golf.JPG) top center no-repeat;
+  background-size: 990px 804px;
+}
+.page-section#lighthouse {
+  background: url(lighthouse.JPG) top center no-repeat;
+  background-size: 990px 804px;
+}
+.page-section#water {
+  background: url(water.JPG) top center no-repeat;
+  background-size: 990px 804px;
+}
+.page-section#beach {
+  background: url(beach.JPG) top center no-repeat;
+  background-size: 990px 804px;
+}
+ 
+@media (min-width: 768px) {
+  .header .navbar-brand {
+    padding-left: 0;
+  }
+  .navbar-nav {
+    float: right;
+  }
+}
+@media (max-width: 480px) {
+  .page-section h1 {
+    font-size: 3em;
+  }
+  .page-section h2 {
+    font-size: 2em;
+  }
+  .page-section p {
+    font-size: 1em;
+    margin: 0 0 20px;
+  }
+}
